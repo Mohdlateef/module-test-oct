@@ -1,7 +1,11 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 body {
   text-transform: capitalize;
@@ -118,6 +122,8 @@ section {
 }
 
 .form {
+  box-sizing: border-box;
+  
   display: flex;
   padding: 28px 24px 32px 24px;
   flex-direction: column;
@@ -126,6 +132,7 @@ section {
   border-radius: 18px;
   background: #fff;
   box-shadow: 0px 25px 54px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
 }
 .form > h2 {
   width: 291px;
@@ -225,16 +232,7 @@ section {
   animation-duration: 10ms;
   padding: 16.5px 14px 16.5px 0px;
 }
-#form-wrap {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  padding: 28px 18px 16px;
-  border-radius: 18px;
-  width: 460px;
-}
+
 .live-classes{
   padding-inline:20px;
   font-family: ABeeZee;
@@ -304,6 +302,8 @@ text-align: center;
   font-weight: 400;
   font-style: italic;
   font-size: 26px;
+  padding: 10px;
+  
 }
 
 .form-col-2{
@@ -317,6 +317,33 @@ padding: 6px, 15px, 6px, 15px;
 .form-col-3{
     font-size: 14px;
     font-weight: 400;
+}
+.light-blue-wrap {
+  width: fit-content;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #ceecff;
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.6rem;
+  color: #2f80ed;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.light-orange-wrap {
+  width: fit-content;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  margin: 1rem 0;
+
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.6rem;
+
+  color: #965400;
+;
+  background-color: rgba(248, 99, 65, 0.15);
 }
 .table{
     font-size: 16px;
@@ -379,32 +406,7 @@ padding: 6px, 15px, 6px, 15px;
 #form-2 {
   border: none;
 }
-.light-blue-wrap {
-  width: fit-content;
-  display: flex;
-  gap: 0.35rem;
-  align-items: center;
-  margin: 1rem 0;
-  background-color: #ceecff;
-  border-radius: 0.25rem;
-  padding: 0.35rem 0.6rem;
-  color: #2f80ed;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-.light-orange-wrap {
-  width: fit-content;
-  display: flex;
-  gap: 0.35rem;
-  align-items: center;
-  margin: 1rem 0;
 
-  border-radius: 0.25rem;
-  padding: 0.35rem 0.6rem;
-
-  color: #f86241;
-  background-color: rgba(248, 99, 65, 0.15);
-}
 .blue-wrap {
   position: absolute;
   top: -1rem;
@@ -459,6 +461,15 @@ padding: 6px, 15px, 6px, 15px;
 
   color: #333 !important;
   width: 440px;
+}
+.Alumni-names>h5{
+  font-family: ABeeZee;
+font-size: 22px;
+font-style: italic;
+font-weight: 400;
+line-height: 33px;
+color: #000000;
+
 }
 
 /* CSS for screens smaller than 576px (e.g., mobile phones) */
