@@ -117,17 +117,97 @@ section {
     font-size:14px;
 }
 
-#input-wrap {
-  background-color: #fafafa;
-  gap: 8px;
-  padding: 0 12px;
+.form {
+  display: flex;
+  padding: 28px 24px 32px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 25px 54px 0px rgba(0, 0, 0, 0.12);
+}
+.form > h2 {
+  width: 291px;
+  color: #2b2f34;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+}
+.form > p {
+  width: 278px;
+  color: #818d9d;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: -30px;
+}
+.input-data {
+  margin-top: -20px;
+  display: flex;
+  width: 366px;
+  padding: 14px 6px 14px 10px;
+  align-items: center;
+  gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--gray2-color);
-  width: 100%;
+  background: #fafafa;
 }
-#input-wrap img {
+.input-data > input {
+  border: none;
+  background-color: transparent;
+}
+.input-data > input:focus {
+  outline: none;
+}
+.form > button {
+  display: flex;
+  width: 367px;
+  padding: 14px 6px 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(277deg, #992fed 0%, #2f80ed 100%);
+  color: #fff;
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+}
+.form > button:hover {
+  scale: 1.1;
+}
+.form > p:last-child {
+  margin-top: 3px;
+  color: #818d9d;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.form > p:last-child > span {
+  color: #2f80ed;
+  font-family: "Philosopher", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* #input-wrap{
   width: 30px;
-}
+} */
 #input-wrap input {
   font: inherit;
   letter-spacing: inherit;
@@ -225,14 +305,7 @@ text-align: center;
   font-style: italic;
   font-size: 26px;
 }
-/* .form2-col-1{
-    display: flex;
-}
-.form2-col-1>h4{
-    font-size:26px ;
-    font-weight: 400;
-    font-style: italic;
-} */
+
 .form-col-2{
  width: 124px;
  height: 24px;
@@ -262,9 +335,46 @@ padding: 6px, 15px, 6px, 15px;
   padding-inline: 0.5vw;
   width: 50px;
 }
-#form-1 .btn,
-#form-2 .btn {
-  width: 100%;
+.buttons > button:nth-child(1) {
+  display: flex;
+  width: 203px;
+  padding: 14px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #2f80ed;
+  background: #fff;
+  color: #2f80ed;
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+}
+.buttons > button:nth-child(2) {
+  display: flex;
+  width: 210px;
+  padding: 14px 6px 14px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border: none;
+  border-radius: 8px;
+  background: #2f80ed;
+  color: #fff;
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: 10px;
+}
+.buttons > button:nth-child(1):hover {
+  scale: 1.1;
+}
+.buttons > button:nth-child(2):hover {
+  scale: 1.1;
 }
 #form-2 {
   border: none;
@@ -313,10 +423,18 @@ padding: 6px, 15px, 6px, 15px;
   text-align: center;
   font-style: italic;
 }
+.btn.btn-primary.btn-lg.fst-italic.fs-6 {
+  width: 250px;
+  font-size: 19px;
+  padding-block: 13px;
+}
 /* Companies */
 .company-img {
   height: 60px;
   width: 200px;
+}
+.report:hover{
+  scale: 1.2;
 }
 /* grid section */
 
@@ -422,5 +540,11 @@ padding: 6px, 15px, 6px, 15px;
   /* Your desktop-specific CSS rules here */
   body {
     font-size: 18px;
+  }
+}
+@media (min-width: 500) {
+  /* Your desktop-specific CSS rules here */
+  body {
+    font-size: 17px;
   }
 }
